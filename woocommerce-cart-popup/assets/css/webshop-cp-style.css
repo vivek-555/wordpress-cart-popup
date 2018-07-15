@@ -1,0 +1,425 @@
+/** Fonts **/
+
+@font-face {
+  font-family: 'woocommerce-cart-popup';
+  src:  url('fonts/woocommerce-cart-popup.eot?7r0p13');
+  src:  url('fonts/woocommerce-cart-popup.eot?7r0p13#iefix') format('embedded-opentype'),
+    url('fonts/woocommerce-cart-popup.ttf?7r0p13') format('truetype'),
+    url('fonts/woocommerce-cart-popup.woff?7r0p13') format('woff'),
+    url('fonts/woocommerce-cart-popup.svg?7r0p13#woocommerce-cart-popup') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="webshop-cp-icon-"], [class*=" webshop-cp-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'woocommerce-cart-popup' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.webshop-cp-icon-spinner:before {
+  content: "\e97b";
+}
+.webshop-cp-icon-cross:before {
+  content: "\ea0d";
+}
+.webshop-cp-icon-check:before {
+  content: "\ea10";
+}
+
+/** -- **/
+.webshop-cp-opac {
+    z-index: 99998;
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    display: none;
+}
+.webshop-cp-opac,.webshop-cp-modal , .webshop-cp-cont-opac{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.webshop-cp-modal {
+    position: fixed;
+    text-align: center;
+    z-index: 99998;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
+}
+
+.webshop-cp-active{
+    transition: visibility 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.webshop-cp-cont-opac{
+    z-index: 1;
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.webshop-cp-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.webshop-cp-container {
+    display: inline-block;
+    max-width: 650px;
+    border: #a0a0a0 solid 1px;
+    background: #fff;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    border-radius: 5px;
+    padding: 15px;
+}
+span.webshop-cp-close {
+    font-size: 29px;
+    position: absolute;
+    right: -13px;
+    top: -11px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.webshop-cp-success, .webshop-cp-error {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    text-align: left;
+}
+.webshop-cp-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    margin-top: 10px;
+}
+.webshop-cp-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.webshop-cp-atcn{
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.webshop-cp-atcn .webshop-cp-icon-check{
+    margin-right: 5px;
+}
+
+.webshop-cp-btns{
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+a.xcp-btn{
+    width: 30%;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 0;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@keyframes webshop-cp-spin {
+    100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.webshop-cp-icon-spinner{
+    animation: webshop-cp-spin 575ms infinite linear;
+    display: inline-block;
+}
+
+td.webshop-cp-ptitle a{
+    font-weight: 600;
+    font-size: 18px;
+}
+td.webshop-cp-pimg{
+    width: 20%;
+}
+.webshop-cp-pdetails{
+    width: 100%;
+    display: block;
+    overflow: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+td.webshop-cp-pprice{
+    font-size: 20px;
+    margin: 15px 0;
+    width: 15%;
+}
+
+td.webshop-cp-pqty{
+    min-width: 90px;
+}
+
+.webshop-cp-pdetails td.webshop-cp-remove{
+    width: 5%;
+    font-size: 20px;
+}
+
+.webshop-cp-pdetails td{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.webshop-cp-pdetails td.webshop-cp-ptitle{
+    text-align: left;
+}
+
+.webshop-cp-ptotal{
+    display: table;
+    float: right;
+    margin-right: 25px;
+    font-size: 18px;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+}
+.xcp-ptotal{
+    font-size: 23px;
+}
+td.webshop-cp-remove .webshop-cp-remove-pd{
+    font-size: 20px;
+    color: #ea0a0a;
+    cursor: pointer;
+}
+
+td.webshop-cp-ptitle{
+    width: 45%;
+    padding-left: 5px;
+}
+.webshop-cp-preloader{
+    position: fixed;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    animation: webshop-cp-spin 575ms infinite linear;
+    font-size: 45px;
+}
+
+@keyframes webshop-cp-spin {
+     from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@-ms-keyframes webshop-cp-spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes webshop-cp-spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes webshop-cp-spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.webshop-cp-outer{
+    display: none;
+}
+.webshop-cp-variations{
+    font-size: 13px;
+}
+
+.webshop-cp-variations .variation {
+    overflow: auto;
+    margin-top: 5px;
+}
+.webshop-cp-variations .variation dt{
+    margin: 0 5px 0 0;
+    float: left;
+}
+.webshop-cp-variations .variation dd{
+    margin: 0 10px 0 0;
+    float: left;
+}
+
+span.xcp-minus {
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+span.xcp-plus {
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+span.xcp-plus, span.xcp-minus {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    width: 21px;
+}
+
+
+
+input[type=number].webshop-cp-qty{
+    border: 0!important;
+    text-align: center;
+    display: inline-block;
+    max-width: 30px;
+    float: left;
+    height: 100%;
+    line-height: 100%;
+    padding: 0;
+    -moz-appearance: textfield;
+}
+input.webshop-cp-qty::-webkit-outer-spin-button,
+input.webshop-cp-qty::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.webshop-cp-qtybox{
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    height: 37px;
+    line-height: 35px;
+}
+.webshop-cp-added,.webshop-cp-adding{
+    margin-left: 5px;
+}
+a.added_to_cart.wc-forward{
+    display: none !important;
+}
+
+.cartridges-list ul {
+    display:inline-block;
+    vertical-align:top;
+}
+
+.cartridge-container.webshop-cp-pdetails{
+    width: 33%;
+    float:left;
+}
+
+.webshop-clearfix{
+    clear: both;
+}
+
+.webshop-cp-pdetails div.webshop-cp-ptitle-cartridge{
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.webshop-cp-pdetails div.webshop-cp-pprice-cartridge{
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.webshop-cp-pdetails div.webshop-cp-pqty-cartridge{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.webshop-cp-pdetails div.webshop-cp-pimg-cartridge{
+    position: relative;
+    /*height: 100%;*/
+    padding-bottom: 80px;
+}
+
+.webshop-cp-pdetails div.webshop-cp-pimg-cartridge img{
+    display: block;
+    margin: 0 auto;
+}
+
+.webshop-cp-pshipping {
+    display: table;
+    float: right;
+    margin-right: 25px;
+    font-size: 16px;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.webshop-cp-pdiscount {
+    display: table;
+    float: right;
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+.webshop-cp-content .webshop-cp-ptotal {
+    clear: both;
+}
+
+.webshop-cp-pimg-machine img{
+    width: 100%;
+}
+
+div.info-store {
+    height: 100%;
+}
+
+/* When screen size is less than 500px */
+@media only screen and (max-width: 500px) {
+    a.xcp-btn{
+        width: 80%;
+        margin: 5px 0;
+    }
+    span.xcp-ptotal , .webshop-cp-ptotal{
+        font-size: 15px;
+
+    }
+    td.webshop-cp-pimg{
+        display: none;
+    }
+    td.webshop-cp-ptitle a , td.webshop-cp-pprice{
+        font-size: 14px;
+    }
+
+    .cartridge-container.webshop-cp-pdetails {
+        width: 100%;
+        clear: both;
+        margin-top: 20px;
+        /*height: 300px;*/
+    }
+}

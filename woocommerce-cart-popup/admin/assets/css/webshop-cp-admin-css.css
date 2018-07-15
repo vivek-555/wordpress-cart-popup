@@ -1,0 +1,183 @@
+.webshop-cp-form h2{
+    background-color: #5e6871;
+    padding: 11px;
+    color: white;
+}
+.webshop-cp-main-settings {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    max-width: 850px;
+}
+
+.webshop-cp-form label{
+    font-style: italic;
+    margin-left: 10px;
+}
+
+/***   ***/
+.webshop-cp-sidebar{
+    width: 25%;
+    max-width: 250px;
+    float: left;
+    margin-top: 54px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 0px;
+    text-align: center;
+    margin-left: 10px;
+}
+.webshop-chhead{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+}
+.webshop-chicon{
+    height: 34px;
+    width: 34px;
+    font-size: 34px;
+}
+.webshop-chtxt {
+    font-size: 16px;
+    margin-right: 24px;
+    line-height: 25px;
+}
+.webshop-more-plugins{
+    margin-top: 4px;
+}
+/* End sidebar */
+
+/*** Tabs ***/
+
+.settings-tab{
+    display: none;
+}
+.settings-tab-active{
+    display: block;
+}
+
+
+
+.webshop-tabs{
+    border-bottom: 1px solid #ccc;
+}
+.webshop-tabs ul{
+    display: inline-block;
+    margin: 0;
+}
+.webshop-tabs li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 3px;
+    background-color: #4C4C4C;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0;
+    cursor: pointer
+}
+
+li.tab-1{
+    margin-left: 0;
+}
+.webshop-tabs .active-tab{
+    background-color: #2d84d4;
+}
+/**          ***/
+
+.prem-disabled{
+    opacity: 0.9;
+    cursor: not-allowed;
+    overflow: hidden;   
+}
+
+@media only screen and (max-width: 1260px) {
+    .prem-disabled{
+        overflow: initial;
+    }
+    .webshop-cp-main-settings{
+        width: 95%;
+    }
+}
+
+.webshop-hero-btns{
+    display: table;
+    padding: 10px;
+    margin: 0 auto;
+}
+.webshop-hero-btns a{
+    margin-right: 15px!important;
+}
+
+/* Free vs Premium */
+.webshop-fvsp{
+    margin: 30px 10px;
+}
+
+.webshop-fvsp-head{
+    display: table;
+    margin: 0 auto;
+    font-size: 30px;
+}
+table.webshop-fvsp-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    margin-top: 25px;
+}
+table.webshop-fvsp-table td {
+    padding: 10px 20px;
+    border: 0;
+    margin: 0;
+}
+table.webshop-fvsp-table th{
+    padding: 10px 20px;
+    color: #5e6871;
+    font-weight: 600;
+    font-size: 16px;
+}
+table.webshop-fvsp-table th span{
+    font-size: 12px;
+}
+table.webshop-fvsp-table tbody tr:nth-child(odd){
+    background-color: #f0f0f0;
+}
+.xfp-yes{
+    color: #3c763d;
+    text-align: center;
+}
+.xfp-no{
+    text-align: center;
+    color: #a94442;
+}
+.xfp-alert{
+    color: #0000ff;
+}
+
+.prem-images {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+.prem-images img{
+    width: 100%;
+}
+.prem-images h3{
+    margin: 5px;
+}
+.prem-images span{
+    font-size: 16px;
+    margin: 5px 0 10px 5px;
+    display: block;
+}
+
+.webshop-cp-form table.form-table{
+    margin: 0 10px;
+}
+
+.webshop-cp-form .settings-tab{
+    background-color: #fff;
+}
+.webshop-cp-prem .webshop-hero-btns {
+    display: table;
+    margin: 10px auto;
+}
+/**** -- */
